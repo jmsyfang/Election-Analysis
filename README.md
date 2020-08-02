@@ -13,10 +13,13 @@ The Coloardo Board of ELections need to audit a recent local election, and would
 1. Data source: election_results.csv
 2. Software: Python 3.7.6 and VSCode
 
-## Summary
+## Results
 - THere was a total of 369,711 votes cast
 - Charles Casper Stockham won 23% of the votes (85,213)
 - Diana DeGette won 73.8% of the votes (272,892)
 - Anthony Doane won 3.1% of the votes (11,606)
 
 -The final winner was Diana DeGette with 272,892 votes (73.8% of total votes)
+
+## Summary
+The python script can be worked again for future audits, as it scans results for candidates and tallies their votes. The results must be sorted by name to work correctly, but should find all candidates and their totals. It may be prudent to hard code the candidates (or a separate file) so tampering data is less of a security risk/incentive. For something like the presidential election (electoral college) you would need an if statement so that the winning candidate for each county (state) would take all their electoral points (either included in data or joined from other source/dictionary)
